@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page-wrapper">
     <h1 class="title">都道府県別感染者データ</h1>
     <div class="container">
       <div
@@ -36,6 +36,11 @@ export default defineComponent({
 </script>
 
 <style>
+.page-wrapper {
+  background-color: #24140e;
+  padding: 20px;
+}
+
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -51,12 +56,13 @@ export default defineComponent({
   display: block;
   font-weight: 300;
   font-size: 2rem;
-  color: #35495e;
+  color: #fff;
   letter-spacing: 1px;
   text-align: center;
+  padding: 30px 0;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 769px) {
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
