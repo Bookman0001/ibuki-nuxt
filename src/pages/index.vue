@@ -56,7 +56,7 @@ export default defineComponent({
   text-align: center;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 769px) {
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
