@@ -7,4 +7,7 @@ export type Infection = {
   population: number
   cases: number
   deaths: number
+  pcr: number
+  hospitalize: number
+  severe: number
 }

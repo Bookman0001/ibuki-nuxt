@@ -11,6 +11,9 @@ type InfectionListResponse = {
   population: number
   cases: number
   deaths: number
+  pcr: number
+  hospitalize: number
+  severe: number
 }[]
 /* eslint-enable camelcase */
 
@@ -27,6 +30,9 @@ export const fetchInfectionList = async (): Promise<Infection[]> => {
           population: data.population,
           cases: data.cases,
           deaths: data.deaths,
+          pcr: data.pcr,
+          hospitalize: data.hospitalize,
+          severe: data.severe,
         }
       })
     }

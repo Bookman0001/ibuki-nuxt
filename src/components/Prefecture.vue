@@ -1,25 +1,30 @@
 <template>
   <div
     :class="{
-      'safe-zone prefecture-item': prefectureInfection.cases < 500,
-      'caution-zone prefecture-item': prefectureInfection.cases >= 500,
-      'danger-zone prefecture-item': prefectureInfection.cases >= 1000,
+      'safe-zone prefecture-item': prefectureInfection.cases < 700,
+      'caution-zone prefecture-item': prefectureInfection.cases >= 700,
+      'danger-zone prefecture-item': prefectureInfection.cases >= 2000,
+      'most-danger-zone prefecture-item': prefectureInfection.cases >= 5000,
     }"
   >
     <div class="wrapper">
       <span>{{ prefectureInfection.nameJa }}</span>
     </div>
     <div class="wrapper">
-      <label class="label-item">感染者数</label>
-      <span>{{ prefectureInfection.cases }}</span>
+      <label class="label-item">これまでの感染者数</label>
+      <span>{{ prefectureInfection.cases }}人</span>
     </div>
     <div class="wrapper">
-      <label class="label-item">感染による死者数</label>
-      <span>{{ prefectureInfection.deaths }}</span>
+      <label class="label-item">これまでの死者数</label>
+      <span>{{ prefectureInfection.deaths }}人</span>
     </div>
     <div class="wrapper">
-      <label class="label-item">都道府県人口</label>
-      <span>{{ prefectureInfection.population }}</span>
+      <label class="label-item">入院患者数</label>
+      <span>{{ prefectureInfection.hospitalize }}人</span>
+    </div>
+    <div class="wrapper">
+      <label class="label-item">重症者数</label>
+      <span>{{ prefectureInfection.severe }}人</span>
     </div>
   </div>
 </template>
@@ -49,19 +54,27 @@ export default defineComponent({
 
 <style scoped>
 .prefecture-item {
+  font-size: 1rem;
+  font-weight: 500;
   border-radius: 10px;
   border: 1px solid #303030;
   padding: 10px;
   margin: 10px;
 }
 .safe-zone {
-  background-color: #48d1cc;
+  background-color: #26499d;
+  color: #fff;
 }
 .caution-zone {
   background-color: #ff9;
 }
 .danger-zone {
-  background-color: #ffa3a3;
+  background-color: #d70035;
+  color: #fff;
+}
+.most-danger-zone {
+  background-color: #a50082;
+  color: #fff;
 }
 .wrapper {
   width: 100%;
