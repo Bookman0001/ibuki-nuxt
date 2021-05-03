@@ -7,7 +7,7 @@ on:
         default: 'master'
         required: true
   schedule:
-    - cron: '00 3 * * *'
+    - cron: '00 10 * * *'
 jobs:
   deploy:
     runs-on: ubuntu-latest
