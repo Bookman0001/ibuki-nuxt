@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Prefecture exist component 1`] = `
+<div
+  cases="10"
+  class="safe-zone prefecture-item"
+  deaths="0"
+  hospitalize="0"
+  id="1"
+  lat="0"
+  lng="0"
+  nameen="test-prefecture"
+  nameja="テスト都道府県"
+  pcr="1000"
+  population="10000"
+  severe="0"
+>
+  <div
+    class="wrapper"
+  >
+    <span>
+      
+    </span>
+  </div>
+   
+  <div
+    class="wrapper"
+  >
+    <label
+      class="label-item"
+    >
+      これまでの感染者数
+    </label>
+     
+    <span>
+      0人
+    </span>
+  </div>
+   
+  <div
+    class="wrapper"
+  >
+    <label
+      class="label-item"
+    >
+      これまでの死者数
+    </label>
+     
+    <span>
+      0人
+    </span>
+  </div>
+   
+  <div
+    class="wrapper"
+  >
+    <label
+      class="label-item"
+    >
+      入院患者数
+    </label>
+     
+    <span>
+      人
+    </span>
+  </div>
+   
+  <div
+    class="wrapper"
+  >
+    <label
+      class="label-item"
+    >
+      重症者数
+    </label>
+     
+    <span>
+      人
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Prefecture render correctly 1`] = `
+<div
+  cases="10"
+  class="safe-zone prefecture-item"
+  deaths="0"
+  hospitalize="0"
+  id="1"
+  lat="0"
+  lng="0"
+  nameen="test-prefecture"
+  nameja="テスト都道府県"
+  pcr="1000"
+  population="10000"
+  severe="0"
+>
+  <div
+    class="wrapper"
+  >
+    <span>
+      
+    </span>
+  </div>
+   
+  <div
+    class="wrapper"
+  >
+    <label
+      class="label-item"
+    >
+      これまでの感染者数
+    </label>
+     
+    <span>
+      0人
+    </span>
+  </div>
+   
+  <div
+    class="wrapper"
+  >
+    <label
+      class="label-item"
+    >
+      これまでの死者数
+    </label>
+     
+    <span>
+      0人
+    </span>
+  </div>
+   
+  <div
+    class="wrapper"
+  >
+    <label
+      class="label-item"
+    >
+      入院患者数
+    </label>
+     
+    <span>
+      人
+    </span>
+  </div>
+   
+  <div
+    class="wrapper"
+  >
+    <label
+      class="label-item"
+    >
+      重症者数
+    </label>
+     
+    <span>
+      人
+    </span>
+  </div>
+</div>
+`;
