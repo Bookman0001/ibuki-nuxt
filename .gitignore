@@ -90,3 +90,7 @@ sw.*
 *.swp
 
 .vercel
+
+# Storybook
+.nuxt-storybook
+storybook-static
