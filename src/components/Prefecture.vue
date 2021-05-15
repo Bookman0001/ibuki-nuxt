@@ -15,6 +15,10 @@
       <span>{{ prefectureInfection.cases }}人</span>
     </div>
     <div class="wrapper">
+      <label class="label-item">これまでのPCR検査数</label>
+      <span>{{ prefectureInfection.pcr }}人</span>
+    </div>
+    <div class="wrapper">
       <label class="label-item">これまでの死者数</label>
       <span>{{ prefectureInfection.deaths }}人</span>
     </div>
@@ -43,6 +47,7 @@ export default defineComponent({
         nameEn: '',
         lat: '',
         lng: '',
+        pct: 0,
         population: 0,
         cases: 0,
         deaths: 0,
