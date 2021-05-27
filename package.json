@@ -26,7 +26,7 @@
     "@nuxtjs/composition-api": "^0.24.0",
     "@types/jest": "^26.0.23",
     "axios": "^0.21.1",
-    "core-js": "^3.12.1",
+    "core-js": "^3.13.0",
     "nuxt": "^2.15.6",
     "tsconfig-paths-webpack-plugin": "^3.5.1"
   },
