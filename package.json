@@ -23,7 +23,7 @@
     }
   },
   "dependencies": {
-    "@nuxtjs/composition-api": "^0.30.0",
+    "@nuxtjs/composition-api": "^0.31.0",
     "@types/jest": "^27.0.3",
     "axios": "^0.24.0",
     "core-js": "^3.19.3",
